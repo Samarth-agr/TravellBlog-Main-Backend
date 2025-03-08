@@ -12,7 +12,9 @@ const path = require("path");
 
 // CORS configuration
 app.use(cors({
-  origin: "http://localhost:3000", "https://uncovertheworld.vercel.app/" , "https://uncovertheworld-samarth-agrawals-projects-26540647.vercel.app/"
+  origin: ["http://localhost:3000", 
+           "https://uncovertheworld.vercel.app/" , 
+           "https://uncovertheworld-samarth-agrawals-projects-26540647.vercel.app/"],
   methods: ["GET", "POST", "PUT", "DELETE"], // Specify allowed methods
   credentials: true, // Allow credentials like cookies or authorization headers
 }));
